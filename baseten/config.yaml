@@ -1,0 +1,17 @@
+environment_variables: {HF_ACCESS_TOKEN}
+external_package_dirs: []
+model_metadata:
+  example_model_input: {"prompt": "What is the use of LLMs?"}
+model_name: Mistral 7B
+python_version: py311
+requirements:
+- transformers==4.34.0
+- sentencepiece==0.1.99
+- accelerate==0.23.0
+- torch==2.0.1
+resources:
+  accelerator: A10G
+  use_gpu: true
+secrets:
+  hf_access_token: HF_ACCESS_TOKEN
+system_packages: []
